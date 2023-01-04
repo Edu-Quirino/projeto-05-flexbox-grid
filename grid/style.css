@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas:
+        "header header header"
+        "menu main main"
+        "footer footer footer";
+
+    grid-template-columns: 20vw auto auto;
+    grid-template-rows: 50px calc(100vh - 100px - 10px) 50px;
+}
+
+.header,
+.menu,
+.main,
+.footer {
+    color: white;
+}
+
+.header {
+    background-color: orangered;
+    grid-area: header;
+    display: grid;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.menu {
+    background-color: blue;
+    grid-area: menu;
+
+}
+
+.manin {
+    background-color: violet;
+    grid-area: main;
+}
+
+.footer {
+    background-color: green;
+    grid-area: footer;
+}
